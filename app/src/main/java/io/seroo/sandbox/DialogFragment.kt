@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.fragment.app.DialogFragment
-import androidx.lifecycle.LifecycleOwner
 
 class DialogFragment: AppCompatDialogFragment() {
     companion object {
