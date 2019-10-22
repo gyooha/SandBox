@@ -1,7 +1,9 @@
 # SandBox
 
-### [다이얼로그 라이프사이클 테스트](https://github.com/gyooha/SandBox/wiki/Dialog-Lifecycle-Test)
-## Activity 라이프사이클 테스트
-* [TODO](#)
-## Navigation Architecture Component 라이프사이클 테스트
-* [TODO](#)
+```
+코딩하다가 궁금한 부분들을 모아서 정리하는 곳 입니다.
+```
+
+### [Dialog Lifecycle Test](https://github.com/gyooha/SandBox/wiki/Dialog-Lifecycle-Test)
+### [Activity Lifecycle Test](https://github.com/gyooha/SandBox/wiki/Activity-Lifecycle-Test)
+### [Navigation Architecture Component Test](https://github.com/gyooha/SandBox/wiki/Navigation-Architecture-Test)
