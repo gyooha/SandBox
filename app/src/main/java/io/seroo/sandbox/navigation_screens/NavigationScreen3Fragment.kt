@@ -1,4 +1,4 @@
-package io.seroo.sandbox
+package io.seroo.sandbox.navigation_screens
 
 import android.content.Context
 import android.os.Bundle
@@ -6,23 +6,23 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatDialogFragment
-import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
+import io.seroo.sandbox.PARENT_TAG
+import io.seroo.sandbox.R
 
-class DialogFragment: AppCompatDialogFragment() {
+class NavigationScreen3Fragment: Fragment() {
+
     companion object {
-        const val TAG = "DialogFragment"
+        private const val TAG = "NavigationScreen3Fragment"
     }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-
         Log.d(PARENT_TAG, "$TAG onAttach")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(DialogFragment.STYLE_NO_TITLE, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen)
         Log.d(PARENT_TAG, "$TAG onCreate")
     }
 
@@ -30,18 +30,16 @@ class DialogFragment: AppCompatDialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        Log.d(PARENT_TAG, "$TAG onCreateView")
-        return inflater.inflate(R.layout.dialog_fragment, container, false)
-    }
+    ): View? = inflater.inflate(R.layout.fragment_navigation_screen_3, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.d(PARENT_TAG, "$TAG onViewCreate")
+        Log.d(PARENT_TAG, "$TAG onViewCreated")
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+
         Log.d(PARENT_TAG, "$TAG onActivityCreated")
     }
 
@@ -73,17 +71,5 @@ class DialogFragment: AppCompatDialogFragment() {
         super.onDetach()
 
         Log.d(PARENT_TAG, "$TAG onDetach")
-    }
-
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-
-        Log.d(PARENT_TAG, "$TAG onSaveInstanceState")
-    }
-
-    override fun onViewStateRestored(savedInstanceState: Bundle?) {
-        super.onViewStateRestored(savedInstanceState)
-
-        Log.d(PARENT_TAG, "$TAG onViewStateRestored")
     }
 }

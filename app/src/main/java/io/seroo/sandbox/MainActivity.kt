@@ -53,6 +53,10 @@ class MainActivity : AppCompatActivity() {
         btn_move_to_main_activity2.setOnClickListener {
             startActivity(Intent(this@MainActivity, MainActivity2::class.java))
         }
+
+        btn_move_to_navigation_activity.setOnClickListener {
+            startActivity(Intent(this@MainActivity, NavigationTestActivity::class.java))
+        }
     }
 
     override fun onPause() {

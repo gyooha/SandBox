@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_xml"
+    app:startDestination="@id/navigationScreen1Fragment">
+
+    <fragment
+        android:id="@+id/navigationScreen1Fragment"
+        android:name="io.seroo.sandbox.navigation_screens.NavigationScreen1Fragment"
+        android:label="NavigationScreen1Fragment" >
+        <action
+            android:id="@+id/action_navigationScreen1Fragment_to_navigationScreen2Fragment"
+            app:destination="@id/navigationScreen2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationScreen2Fragment"
+        android:name="io.seroo.sandbox.navigation_screens.NavigationScreen2Fragment"
+        android:label="NavigationScreen2Fragment" >
+        <action
+            android:id="@+id/action_navigationScreen2Fragment_to_navigationScreen3Fragment"
+            app:destination="@id/navigationScreen3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationScreen3Fragment"
+        android:name="io.seroo.sandbox.navigation_screens.NavigationScreen3Fragment"
+        android:label="NavigationScreen3Fragment" />
+    <activity
+        android:id="@+id/navigationTestActivity"
+        android:name="io.seroo.sandbox.NavigationTestActivity"
+        android:label="NavigationTestActivity" />
+</navigation>

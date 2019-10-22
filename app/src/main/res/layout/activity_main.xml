@@ -49,4 +49,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_move_to_navigation_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to NavigationTestActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_dialog_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
