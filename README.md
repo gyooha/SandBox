@@ -1,14 +1,7 @@
-# SandBox - Lifecycle Test
+# SandBox
 
-## Show dialog
-
-<img src="images/show_alert_dialog.png" /> <br/>
-<img src="images/show_fullscreen_fragment_dialog.png" /> <br/>
-<img src="images/show_fullscreen_alert_dialog.png" /> <br/>
-
-* will never get logged pause
-
-## Move to other activity
-
-<img src="images/mainactivity_to_mainactivity2.png" /> <br/>
-<img src="images/mainactivity2_to_mainactivity.png" /> <br/>
+### [다이얼로그 라이프사이클 테스트](https://github.com/gyooha/SandBox/wiki/Dialog-Lifecycle-Test)
+## Activity 라이프사이클 테스트
+* [TODO](#)
+## Navigation Architecture Component 라이프사이클 테스트
+* [TODO](#)
