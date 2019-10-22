@@ -87,6 +87,12 @@ class NavigationScreen1Fragment : Fragment() {
         Log.d(PARENT_TAG, "$TAG onDestroy")
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        Log.d(PARENT_TAG, "$TAG onSaveInstanceState")
+    }
+
     override fun onDetach() {
         super.onDetach()
 
